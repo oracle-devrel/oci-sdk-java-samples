@@ -1,4 +1,4 @@
-# oci-sdk-java-samples
+# OCI Java SDK Samples
 
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_oci-sdk-java-samples)](https://sonarcloud.io/dashboard?id=oracle-devrel_oci-sdk-java-samples)
 
@@ -8,6 +8,9 @@ Software Development Kits (SDKs) Build and deploy apps that integrate with Oracl
 ## Hello World Samples
 * [Simple Java CLI App with OCI SDK](./hello-world/java-cli-app/)
 * [Spring Boot App with OCI SDK](./hello-world/java-springboot-app/)
+
+## Use cases
+* [Streaming OCI Storage Objects via HTTP with SpringBoot Application](./usecases/storage-file-streaming/)
 
 ## References
 * [OCI SDK - Official Documentation](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
