@@ -35,6 +35,8 @@ cd usecases/storage-file-streaming/
 private final String BUCKET_NAME = "your-bucket";
 ```
 * By default it uses default namespace. You may change `getDefaultNamespace()` in the class `StorageStreamService` method to use different namespace.
+* Please update `DOWNLOAD_URL` in `mvnw.cmd` and `mvnw` files to point to the right download URL with appropriate version.
+* To address security issues, Check & Change the `pom.xml` dependency versions to point to the appropriate latest versions.
 
 ### Step 2 (Run the program)
 * Click on `Run As` > `Java Application` from the `OciStorageFileStreamingApplication.java` file.
