@@ -11,6 +11,7 @@ Software Development Kits (SDKs) Build and deploy apps that integrate with Oracl
 
 ## Use cases
 * [Streaming OCI Storage Objects via HTTP with SpringBoot Application](./usecases/storage-file-streaming/)
+* [Connecting to OCI Autonomous Oracle Database](./usecases/connect-autonomous-database/)
 
 ## References
 * [OCI SDK - Official Documentation](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
