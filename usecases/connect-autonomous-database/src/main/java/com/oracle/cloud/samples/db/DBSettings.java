@@ -1,4 +1,4 @@
-package com.oracle.cloud.world.demo.db;
+package com.oracle.cloud.samples.db;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

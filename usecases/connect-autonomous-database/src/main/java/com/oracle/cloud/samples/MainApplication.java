@@ -1,4 +1,4 @@
-package com.oracle.cloud.world.demo;
+package com.oracle.cloud.samples;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

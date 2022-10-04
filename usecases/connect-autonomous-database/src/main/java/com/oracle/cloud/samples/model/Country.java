@@ -1,4 +1,4 @@
-package com.oracle.cloud.world.demo.model;
+package com.oracle.cloud.samples.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

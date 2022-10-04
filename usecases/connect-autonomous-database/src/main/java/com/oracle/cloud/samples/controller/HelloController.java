@@ -1,4 +1,4 @@
-package com.oracle.cloud.world.demo.controller;
+package com.oracle.cloud.samples.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;  

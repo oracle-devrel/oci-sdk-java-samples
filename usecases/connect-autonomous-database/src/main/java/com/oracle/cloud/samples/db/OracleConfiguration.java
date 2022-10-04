@@ -1,4 +1,4 @@
-package com.oracle.cloud.world.demo.db;
+package com.oracle.cloud.samples.db;
 
 import java.sql.SQLException;
 

@@ -1,4 +1,4 @@
-package com.oracle.cloud.world.demo.controller;  
+package com.oracle.cloud.samples.controller;  
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.oracle.cloud.world.demo.model.Country;
-import com.oracle.cloud.world.demo.repository.CountryRepository;  
+import com.oracle.cloud.samples.model.Country;
+import com.oracle.cloud.samples.repository.CountryRepository;  
 
 @RestController  
 public class CountryController   
