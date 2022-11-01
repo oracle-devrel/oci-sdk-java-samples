@@ -34,15 +34,16 @@ cd usecases/connect-autonomous-database/
 * Extract the wallet.zip to some location.
 
 ### Step 3 (Update Wallet Info)
-* Open `application.properties` and change below properties.
+* We can pass DB details as environment variables. else Open `application.properties` and change below properties.
 ```
-spring.datasource.url=jdbc:oracle:thin:@<DB_NAME>?TNS_ADMIN=<EXTRACTED_WALLET_LOCATION>
-spring.datasource.username=<DB_USERNAME>
-spring.datasource.password=<DB_PASSWORD>
+spring.datasource.url=jdbc:oracle:thin:@${ADB_NAME}?TNS_ADMIN=${EXTRACTED_ADB_WALLET_LOCATION}
+spring.datasource.username=${ADB_USERNAME}
+spring.datasource.password=${ADB_PASSWORD}
 ```
 **Note** For production, wallet location is mounted from secrets.
 
 ### Step 2 (Run the program)
+**Note:** Pass `ADB_USERNAME`, `ADB_PASSWORD`, `ADB_NAME` and `EXTRACTED_ADB_WALLET_LOCATION` environment variables or change the `application.properties` as appropriately.
 * Click on `Run As` > `Java Application` from the `MainApplication.java` file.
 * Wait for the successful start of the Spring Boot service. (sample logs shown here)
 ```
