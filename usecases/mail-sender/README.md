@@ -46,8 +46,8 @@ Note: Set appropriate values to the fields `mail.from` and `mail.smtp.host` base
 * Wait for the successful start of the Spring Boot service. (sample logs shown here)
 ```
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/Users/ascm/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/Users/ascm/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/.../.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/.../.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
 
@@ -59,7 +59,7 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.2)
 
-2023-02-07 17:49:07.662  INFO 14357 --- [           main] c.o.c.s.s.OciMailSenderApplication       : Starting OciMailSenderApplication using Java 18 on ascm-mac with PID 14357 (/Users/ascm/Documents/GitHub/oci-sdk-java-samples/usecases/mail-sender/target/classes started by ascm in /Users/ascm/Documents/GitHub/oci-sdk-java-samples/usecases/mail-sender)
+2023-02-07 17:49:07.662  INFO 14357 --- [           main] c.o.c.s.s.OciMailSenderApplication       : Starting OciMailSenderApplication using Java 18 on host with PID 14357 (/Users/.../Documents/GitHub/oci-sdk-java-samples/usecases/mail-sender/target/classes started by user in /Users/.../Documents/GitHub/oci-sdk-java-samples/usecases/mail-sender)
 2023-02-07 17:49:07.665  INFO 14357 --- [           main] c.o.c.s.s.OciMailSenderApplication       : No active profile set, falling back to 1 default profile: "default"
 2023-02-07 17:49:09.336  INFO 14357 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
 2023-02-07 17:49:09.350  INFO 14357 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
