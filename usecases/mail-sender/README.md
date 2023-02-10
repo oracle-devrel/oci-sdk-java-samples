@@ -30,16 +30,16 @@ cd usecases/mail-sender/
 * Click on `Finish`. 
 
 **Note:**
-* Fill below properties in `application.properties`.
-```
-mail.from = noreply@notification.us-ashburn-1.oci.oraclecloud.com
-mail.fromName = OCI Notification
-mail.smtp.user = <SMTP User>
-mail.smtp.password = <SMTP Password>
-mail.smtp.host = smtp.email.us-ashburn-1.oci.oraclecloud.com
-mail.smtp.port = 587
-```
-Note: Set appropriate values to the fields `mail.from` and `mail.smtp.host` based on region and your use case. 
+* Set below environment variables before trying out this application.
+
+| Variables | Description | Sample / Default Value  |
+| ------- | --- | --- |
+| MAIL_FROM | Any one from Approved Senders from Email Service. | ocid... |
+| MAIL_FROM_USERNAME | Custom name | -- |
+| MAIL_SMTP_USER | Use from SMTP Credentials from User Profile | NA |
+| MAIL_SMTP_PASSWORD | Use from SMTP Credentials from User Profile | NA |
+| MAIL_SMTP_HOST | Value from Email Service Configuration | smtp.email.< REGION>.oci.oraclecloud.com |
+| MAIL_SMTP_PORT | Mail Service Port | Default: 587 |
 
 ### Step 2 (Run the program)
 * Click on `Run As` > `Java Application` from the `OciMailSenderApplication.java` file.
