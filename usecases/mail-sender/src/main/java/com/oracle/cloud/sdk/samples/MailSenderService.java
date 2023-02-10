@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import javax.mail.Authenticator;
 import javax.mail.Message;
+import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
@@ -36,7 +37,7 @@ public class MailSenderService {
 	@Value("${mail.smtp.port}")
 	private String port;
 	
-	public void sendMail(MailContent content) {
+	public void sendMail(MailContent content) throws Exception {
 		System.out.println("TLSEmail Start");
 		
 		Properties props = new Properties();
@@ -55,35 +56,29 @@ public class MailSenderService {
 		sendEmailLocal(session, content);
 	}
 	
-	private void sendEmailLocal(Session session, MailContent content){
-		try
-	    {
-	      MimeMessage msg = new MimeMessage(session);
-	      //set message headers
-	      msg.addHeader("Content-type", "text/HTML; charset=UTF-8");
-	      msg.addHeader("format", "flowed");
-	      msg.addHeader("Content-Transfer-Encoding", "8bit");
+	private void sendEmailLocal(Session session, MailContent content) throws Exception {
+		MimeMessage msg = new MimeMessage(session);
+		// set message headers
+		msg.addHeader("Content-type", "text/HTML; charset=UTF-8");
+		msg.addHeader("format", "flowed");
+		msg.addHeader("Content-Transfer-Encoding", "8bit");
 
-	      msg.setFrom(new InternetAddress(fromEmail, fromEmailName));
+		msg.setFrom(new InternetAddress(fromEmail, fromEmailName));
 
-	      msg.setReplyTo(InternetAddress.parse(fromEmail, false));
+		msg.setReplyTo(InternetAddress.parse(fromEmail, false));
 
-	      msg.setSubject(content.subject, "UTF-8");
+		msg.setSubject(content.subject, "UTF-8");
 
-	      msg.setText(content.body, "UTF-8");
+		msg.setText(content.body, "UTF-8");
 
-	      msg.setSentDate(new Date());
+		msg.setSentDate(new Date());
 
-	      msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(content.to, false));
-	      
-	      System.out.println("Message is ready");
-    	  Transport.send(msg);  
+		msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(content.to, false));
 
-	      System.out.println("EMail Sent Successfully!!");
-	    }
-	    catch (Exception e) {
-	      e.printStackTrace();
-	    }
+		System.out.println("Message is ready");
+		Transport.send(msg);
+
+		System.out.println("Email Sent Successfully!!");
 	}
 	
 	public static class MailContent {

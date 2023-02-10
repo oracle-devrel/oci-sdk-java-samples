@@ -19,7 +19,7 @@ public class MailSenderController {
 	}
 	
 	@RequestMapping(value="/send", method = RequestMethod.GET)
-	public String send() {
+	public String send() throws Exception{
 		service.sendMail(new MailSenderService.MailContent("<YOUR_MAIL_ID>", "Hello from OCI SpringBoot", "Test Message"));
 		return "Done";
 	}
@@ -30,7 +30,7 @@ public class MailSenderController {
 	    produces = "application/json", 
 	    consumes = "application/json")
 	@ResponseBody
-	public String sendPost(@RequestBody MailSenderService.MailContent content) {
+	public String sendPost(@RequestBody MailSenderService.MailContent content) throws Exception {
 		service.sendMail(content);
 		return "Done";
 	}
