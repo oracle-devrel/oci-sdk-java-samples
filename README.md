@@ -14,6 +14,7 @@ Software Development Kits (SDKs) Build and deploy apps that integrate with Oracl
 * [Connecting to OCI Autonomous Oracle Database](./usecases/connect-autonomous-database/)
 * [OCI AI Vision Service Integration](./usecases/ai-vision-service-integration/)
 * [Send Mail using OCI Email Service](./usecases/mail-sender/)
+* [OCI Streaming Service Integration](./usecases/oci-streaming-integration/)
 
 ## References
 * [OCI SDK - Official Documentation](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
