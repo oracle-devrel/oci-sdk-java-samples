@@ -11,8 +11,6 @@ This project sample helps developers to setup their first OCI SDK based java app
 
 ### Step 1 - Quick Launch
 
-## Quick Launch
-
 If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below.
 
 [<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/pre-prod/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=hello-world/java-cli-app/src/main/java/com/oracle/oci/sdk/examples/compute/ListInstances.java&cs_branch=pre-prod)
