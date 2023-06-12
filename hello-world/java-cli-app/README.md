@@ -7,7 +7,21 @@ Software Development Kits (SDKs) Build and deploy apps that integrate with Oracl
 
 This project sample helps developers to setup their first OCI SDK based java application. This project contains all the required OCI SDK dependencies in `pom.xml`.
 
-## Cloning this Sample
+## Running from Cloud Shell
+
+### Step 1 - Quick Launch
+
+## Quick Launch
+
+If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below.
+
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/pre-prod/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=hello-world/java-cli-app/src/main/java/com/oracle/oci/sdk/examples/compute/ListInstances.java&cs_branch=pre-prod)
+
+This button automates upto Step 1 on your OCI Cloud Shell and opens the code in OCI Code Editor to continue with Step 2 manually.
+
+If you like to do it fully manually yourself, start from Step 1 below.
+
+### Step 1 - Clone repository
 ```
 git init java-cli-app
 cd java-cli-app
@@ -18,8 +32,34 @@ git pull --depth=1 origin main
 cd hello-world/java-cli-app/
 ```
 
-## Import Project into Eclipse IDE
-### Step 1 (Setup Eclipse project)
+### Step 3 - Update properties
+
+Update `region` and `compartmentId` in `ListInstances.java` (opens automatically if you use above Quick Launch button).
+
+### Step 4 - Run below commands to run the sample
+
+```
+mvn clean package
+
+mvn assembly:assembly -DdescriptorId=jar-with-dependencies
+
+java -jar target/oci-java-compute-examples-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+```
+
+## Running from Eclipse
+
+### Step 1 - Clone repository
+```
+git init java-cli-app
+cd java-cli-app
+git remote add origin https://github.com/oracle-devrel/oci-sdk-java-samples.git
+git config core.sparsecheckout true
+echo "hello-world/java-cli-app/*">>.git/info/sparse-checkout
+git pull --depth=1 origin main
+cd hello-world/java-cli-app/
+```
+
+### Step 2 (Setup Eclipse project)
 * Open `File` > `Import` and choose `Existing Projects into Workspace` as below.
 ![](./images/oci-java-project-import-eclipse.png
 )
@@ -28,7 +68,7 @@ cd hello-world/java-cli-app/
 * Click on `Finish`. Now you can open `ListInstances` code as shown below and update `compartmentId` and `region` as per yours.
 ![](./images/oci-java-sdk-cli-eclipse-code.png)
 
-### Step 2 (Run the program)
+### Step 3 (Run the program)
 * Click on `Run As` > `Java Application` from the `ListInstances.java` file.
 ![](./images/eclipse-run-menu.png)
 * Here is the output with the list of instances in your `compartmentId` and `region`
