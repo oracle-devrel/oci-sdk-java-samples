@@ -10,6 +10,12 @@ This project sample showcases the sample code to connect to OCI Autonomous Datab
 * Load countries sample data from [db/countries.sql](./db/countries.sql)
 
 ## Cloning this Sample
+If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below.
+
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/pre-prod/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=usecases/connect-autonomous-database/README.md)
+
+or 
+
 ```
 git init connect-autonomous-database
 cd connect-autonomous-database
