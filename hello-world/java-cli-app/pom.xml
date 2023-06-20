@@ -6,7 +6,11 @@
   <name>Oracle Cloud Infrastructure SDK - Compute Examples</name>
   <description>This project contains the sample SDK code for Oracle Cloud Infrastructure Compute service</description>
   <url>https://docs.cloud.oracle.com/Content/API/SDKDocs/javasdk.htm</url>
-  
+  <properties> 
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
 <dependencyManagement>
     <dependencies>
       <dependency>
@@ -459,12 +463,26 @@
       <groupId>com.oracle.oci.sdk</groupId>
       <artifactId>oci-java-sdk-licensemanager</artifactId>
     </dependency>
-	<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry -->
-	<dependency>
-	    <groupId>io.github.resilience4j</groupId>
-	    <artifactId>resilience4j-retry</artifactId>
-	    <version>1.7.1</version>
-	</dependency>
+    <!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry -->
+    <dependency>
+        <groupId>io.github.resilience4j</groupId>
+        <artifactId>resilience4j-retry</artifactId>
+        <version>1.7.1</version>
+    </dependency>
   </dependencies>
-
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.oracle.oci.sdk.examples.compute.ListInstances</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

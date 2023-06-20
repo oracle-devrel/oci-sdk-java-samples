@@ -11,6 +11,12 @@ This project sample showcases the sample code to publish and retrieve messages u
 * Create OCI Stream [[Refer Here]](https://docs.oracle.com/en-us/iaas/Content/Streaming/Tasks/creatingstreamsandstreampools_create-stream.htm) and keep Stream OCID handy.
 
 ## Cloning this Sample
+If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below.
+
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/main/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=usecases/oci-streaming-integration/README.md)
+
+or 
+
 ```
 git init oci-streaming-integration
 cd oci-streaming-integration

@@ -11,6 +11,12 @@ This project sample showcases the sample code to integrate with OCI AI Vission s
 * Create bucket `your-bucket` in your object storage and have sample image and video files uploaded.
 
 ## Cloning this Sample
+If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below.
+
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/main/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=usecases/ai-vision-service-integration/README.md)
+
+or 
+
 ```
 git init ai-vision-service-integration
 cd ai-vision-service-integration

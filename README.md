@@ -5,6 +5,12 @@
 ## Introduction
 Software Development Kits (SDKs) Build and deploy apps that integrate with Oracle Cloud Infrastructure services. Each SDK provides the tools you need to develop an app, including code samples and documentation to create, test, and troubleshoot. In addition, if you want to contribute to the development of the SDKs, they are all open source and available on GitHub.
 
+### Quick Launch
+
+If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below to clone this repository in your cloud shell workspace.
+
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/main/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=README.md)
+
 ## Hello World Samples
 * [Simple Java CLI App with OCI SDK](./hello-world/java-cli-app/)
 * [Spring Boot App with OCI SDK](./hello-world/java-springboot-app/)
