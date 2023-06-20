@@ -9,7 +9,7 @@ Software Development Kits (SDKs) Build and deploy apps that integrate with Oracl
 
 If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below to clone this repository in your cloud shell workspace.
 
-[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/pre-prod/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=README.md)
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/main/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-java-samples.git&cs_open_ce=true&cs_readme_path=README.md)
 
 ## Hello World Samples
 * [Simple Java CLI App with OCI SDK](./hello-world/java-cli-app/)

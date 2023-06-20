@@ -23,13 +23,15 @@ public class ListInstances {
     	
     	AuthenticationDetailsProvider adp = OCIConfig.getAuthenticationDetailsProvider();
     	Region region = Region.US_ASHBURN_1;
-    	String compartmentId = "ocid1.tenancy.oc1..aaaaaaaasu7rvefmsyk5kqczfmdqi5clpddejfjk2attdqnk6sbk72wajq5q";  // TODO: Set your compartment ID here.
+    	String compartmentId = "ocid1.compartment.oc1.......";  // TODO: Set your compartment ID here.
 
     	ListInstancesRequest request = ListInstancesRequest.builder()
         		.compartmentId(compartmentId)
         		.build(); 
         
         List<Instance> instances = getInstances(adp, region, request);
+
+        System.out.println("Hello, Here are the list of instances");
         
         instances.stream().forEach((Instance instance) -> {
         	System.out.println("Instance: " + instance.getId());
